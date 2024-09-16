@@ -8,10 +8,14 @@
 .local/
 .vim/plugged/
 .ssh/
-.oh-my-zsh/
+
 
 
 # Bỏ qua các tập tin
+connect_storage.bat
+touch
+clone.zsh
+.zsh_history
 *.un~
 *:Zone.Identifier
 *.zwc
