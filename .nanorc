@@ -1,0 +1,317 @@
+## Tệp khởi tạo mẫu cho GNU nano.
+##
+## Đối với các tùy chọn cần tham số, giá trị mặc định được hiển thị.
+## Các tùy chọn khác sẽ bị tắt theo mặc định. Để đảm bảo một tùy chọn
+## bị vô hiệu hóa, bạn có thể sử dụng "unset <tùy chọn>".
+##
+## Các ký tự đặc biệt trong shell không cần phải thoát trong tệp này.
+## Bên trong chuỗi, dấu ngoặc kép không cần thoát -- dấu ngoặc kép cuối cùng
+## trên dòng sẽ được xem là kết thúc chuỗi.
+
+## Làm cho 'nextword' (Ctrl+Right) và 'chopwordright' (Ctrl+Delete)
+## dừng tại cuối từ thay vì tại đầu từ.
+set afterends
+
+## Khi bật chế độ ngắt dòng mềm, làm cho nó ngắt dòng tại khoảng trắng
+## (tab và khoảng trống) thay vì luôn ở cạnh màn hình.
+set atblanks
+
+## Tự động thụt lề dòng mới tạo với cùng số tab và/hoặc khoảng trống
+## như dòng trước đó -- hoặc dòng tiếp theo nếu dòng trước là đầu đoạn văn.
+set autoindent
+
+## Sao lưu tệp với tên tệp hiện tại cộng với dấu ngã.
+#set backup
+
+## Thư mục để đặt các tệp sao lưu độc đáo.
+#set backupdir "$HOME/backup"
+
+## Sử dụng văn bản in đậm thay vì văn bản đảo ngược video.
+set boldtext
+
+## Xem bất kỳ dòng nào có khoảng trắng dẫn đầu như là bắt đầu của một đoạn văn.
+set bookstyle
+
+## Các ký tự được coi là dấu ngoặc đóng khi chỉnh đoạn văn.
+## Không bao gồm ký tự trống. Chỉ dấu chấm câu đóng, 
+## có thể theo sau bởi dấu ngoặc đóng, có thể kết thúc câu.
+set brackets ""')>]}" 
+
+## Tự động ngắt dòng khi dòng hiện tại trở nên quá dài.
+set breaklonglines
+
+## Tìm kiếm phân biệt chữ hoa thường theo mặc định.
+set casesensitive
+
+## Hiển thị liên tục vị trí con trỏ trên thanh trạng thái hoặc minibar.
+set constantshow
+
+## Cắt từ con trỏ đến cuối dòng theo mặc định.
+# set cutfromcursor
+
+## Không sử dụng dòng dưới thanh tiêu đề, để lại nó hoàn toàn trống.
+# set emptyline
+
+## Đặt chiều rộng mục tiêu cho việc ngắt dòng cứng tự động và chỉnh đoạn văn.
+## Nếu giá trị được chỉ định là 0 hoặc ít hơn, điểm ngắt dòng sẽ là 
+## chiều rộng của terminal trừ đi số này.
+# set fill -8
+
+## Vẽ một dải dọc tại cột cho trước, để giúp đánh giá chiều rộng văn bản.
+## (Tùy chọn này không có giá trị mặc định.)
+# set guidestripe 75
+
+## Ghi nhớ các chuỗi tìm kiếm/thay thế đã sử dụng cho phiên làm việc tiếp theo.
+# set historylog
+
+## Hiển thị một "thanh cuộn" ở phía bên phải của cửa sổ chỉnh sửa.
+set indicator
+
+## Cuộn nội dung bộ đệm theo nửa màn hình thay vì theo dòng.
+# set jumpyscrolling
+
+## Hiển thị số dòng ở bên trái (và bất kỳ điểm neo nào trong lề).
+set linenumbers
+
+## Kích hoạt các tập tin khóa kiểu vim. Đây chỉ để thông báo cho người dùng vim rằng bạn
+## đang chỉnh sửa một tệp mà họ đang cố gắng chỉnh sửa và ngược lại. Hiện chưa có kế hoạch
+## triển khai trạng thái hoàn tác kiểu vim trong các tệp này.
+set locking
+
+## Quay lại chế độ libmagic chậm để cố gắng xác định cú pháp áp dụng.
+set magic
+
+## Các dấu ngoặc mở và đóng được tìm thấy qua tìm kiếm ngoặc khớp. Điều này không thể chứa ký tự khoảng trắng.
+## Các dấu ngoặc mở phải đứng trước các dấu ngoặc đóng, và chúng phải theo cùng một thứ tự.
+set matchbrackets "(<[{)>}]"
+
+## Ẩn thanh tiêu đề và hiển thị tên tệp cộng với tỷ lệ phần trăm vị trí con trỏ trong không gian của thanh trạng thái.
+#set minibar
+
+## Kích hoạt hỗ trợ chuột, nếu có sẵn cho hệ thống của bạn. Khi kích hoạt,
+## nhấp chuột có thể được sử dụng để đặt con trỏ, đặt dấu (với một cú nhấp đúp) và thực hiện phím tắt.
+## Chuột sẽ hoạt động trong Hệ thống X Window và trên console khi gpm đang chạy.
+set mouse
+
+## Bật nhiều bộ đệm tệp (chèn một tệp sẽ đặt nó vào một bộ đệm riêng biệt).
+set multibuffer
+
+## Không chuyển đổi các tệp từ định dạng DOS/Mac.
+set noconvert
+
+## Không hiển thị danh sách phím tắt hữu ích ở cuối màn hình.
+# set nohelp
+
+## Không tự động thêm một dòng mới khi một tệp không kết thúc bằng một cái.
+# set nonewlines
+
+## Đặt thư mục hoạt động. Nano sẽ không đọc hoặc ghi các tệp ngoài thư mục này và các thư mục con của nó.
+## Cũng thay đổi thư mục hiện tại thành đây, vì vậy bất kỳ tệp nào được chèn từ thư mục này. Một chuỗi trống có nghĩa là
+## tính năng thư mục-hoạt động bị tắt.
+# set operatingdir ""
+
+## Ghi nhớ vị trí con trỏ trong mỗi tệp cho phiên làm việc chỉnh sửa tiếp theo.
+# set positionlog
+
+## Bảo tồn các phím XON và XOFF (^Q và ^S).
+set preserve
+
+## Các ký tự được coi là dấu câu đóng khi căn chỉnh các đoạn văn.
+## Điều này không thể chứa ký tự khoảng trắng. Chỉ những dấu câu đóng này,
+## tùy chọn theo sau bởi các dấu ngoặc đóng, có thể kết thúc câu.
+# set punct "!.?"
+
+## Làm cho các thông báo trên thanh trạng thái biến mất sau 1 phím thay vì sau 20.
+# set quickblank
+
+## Biểu thức chính quy khớp với các ký tự trích dẫn trong email
+## hoặc các ký tự giới thiệu dòng chú thích trong mã nguồn. Mặc định là:
+set quotestr "^([ 	]*([!#%:;>|}]|//))+"
+
+## Cố gắng khắc phục sự miêu tả thiết bị đầu cuối mismatching terminfo.
+set rawsequences
+
+## Sửa vấn đề nhầm lẫn Backspace/Delete.
+#set rebinddelete
+
+## Tìm kiếm theo biểu thức chính quy mặc định.
+## Biểu thức chính quy là loại mở rộng (ERE).
+# set regexp
+
+## Lưu một bộ đệm đã thay đổi tự động khi thoát; không yêu cầu xác nhận.
+# set saveonexit
+
+## Đặt con trỏ trên mục được làm nổi bật trong trình duyệt tệp, và
+## hiển thị con trỏ trong trình xem trợ giúp; hữu ích cho những người sử dụng
+## màn hình braille và người có thị lực kém.
+#set showcursor
+
+## Làm cho phím Home thông minh hơn: khi Home được nhấn ở bất kỳ đâu nhưng tại điểm bắt đầu của các ký tự không phải khoảng trắng trên một dòng, con trỏ sẽ nhảy đến điểm bắt đầu đó (hoặc về phía trước hoặc lùi lại). Nếu con trỏ đã ở vị trí đó, nó sẽ nhảy đến điểm bắt đầu thực sự của dòng (rìa bên trái).
+set smarthome
+
+## Phân tán các dòng quá dài ra nhiều dòng màn hình.
+set softwrap
+
+## Sử dụng trình kiểm tra chính tả này thay vì trình kiểm tra chính tả nội bộ. Tùy chọn này
+## không có giá trị mặc định.
+set speller "aspell -x -c"
+
+## Sử dụng phần cuối của thanh tiêu đề cho một số cờ trạng thái: I = tự động thụt lề,
+## M = đánh dấu, L = gói các dòng dài, R = ghi âm, S = gói mềm.
+# set stateflags
+
+## Sử dụng kích thước tab này thay vì mặc định; nó phải lớn hơn 0.
+# set tabsize 8
+
+## Chuyển đổi mỗi tab đã gõ thành số lượng khoảng trắng phù hợp.
+# set tabstospaces
+
+## Cắt khoảng trắng ở cuối các dòng khi căn chỉnh hoặc gói cứng.
+# set trimblanks
+
+## Lưu các tệp theo định dạng Unix mặc định (cũng khi chúng là DOS hoặc Mac).
+set unix
+
+## Hai ký tự cột đơn được sử dụng để hiển thị các ký tự đầu tiên của các tab và khoảng trắng.
+## 187 trong ISO 8859-1 (0000BB trong Unicode) và 183 trong ISO-8859-1 (0000B7 trong Unicode) dường như là các giá trị tốt cho những điều này.
+## Mặc định khi ở một địa phương UTF-8:
+# set whitespace "»·"
+## Mặc định khác:
+# set whitespace ">."
+
+## Phát hiện các ranh giới từ theo cách khác bằng cách coi các ký tự dấu câu
+## là các phần của từ.
+# set wordbounds
+
+## Các ký tự (ngoài các ký tự chữ và số) nên được coi là các phần của từ. Tùy chọn này
+## không có giá trị mặc định. Khi đặt, nó ghi đè lên tùy chọn 'set wordbounds'.
+# set wordchars "<_>."
+
+## Để xóa vùng đã đánh dấu bằng một Backspace hoặc Delete không sửa đổi (thay vì
+## một ký tự đơn, và không ảnh hưởng đến vùng cắt).
+# set zap
+
+## Ẩn các thanh và các dòng trợ giúp và sử dụng toàn bộ terminal làm khu vực chỉnh sửa.
+# set zero
+
+## Sơn các phần tử giao diện của nano. Đây là các ví dụ; không có màu sắc theo mặc định, ngoài errorcolor và spotlightcolor.
+set titlecolor bold,white,blue
+set promptcolor lightwhite,grey
+set statuscolor bold,white,green
+set errorcolor bold,white,red
+set spotlightcolor black,lightyellow
+set selectedcolor lightwhite,magenta
+set stripecolor ,yellow
+set scrollercolor cyan
+set numbercolor cyan
+set keycolor cyan
+set functioncolor green
+
+## Trong .nanorc của root bạn có thể muốn sử dụng:
+set titlecolor bold,white,magenta
+set promptcolor black,yellow
+set statuscolor bold,white,magenta
+set errorcolor bold,white,red
+set spotlightcolor black,orange
+set selectedcolor lightwhite,cyan
+set stripecolor ,yellow
+set scrollercolor magenta
+set numbercolor magenta
+set keycolor lightmagenta
+set functioncolor magenta
+
+## === Tô màu cú pháp ===
+## Để biết tất cả chi tiết, hãy xem 'man nanorc', phần TÔ MÀU CÚ PHÁP.
+
+## Để bao gồm hầu hết các định nghĩa cú pháp hiện có, bạn có thể làm:
+#include "/mnt/e/chocolatey/lib/nano-win/tools/syntax/*.nanorc"
+
+## Hoặc bạn có thể chọn chỉ những cái bạn cần. Ví dụ:
+# include "C:/ProgramData/chocolatey/lib/nano-win/tools/syntax/html.nanorc"
+# include "C:/ProgramData/chocolatey/lib/nano-win/tools/syntax/python.nanorc"
+# include "C:/ProgramData/chocolatey/lib/nano-win/tools/syntax/sh.nanorc"
+
+## Trong thư mục C:/ProgramData/chocolatey/lib/nano-win/tools/syntax/extra/, bạn có thể tìm thấy một số cú pháp
+## dành riêng cho một số hệ điều hành hoặc một số ngôn ngữ ít phổ biến hơn.
+
+## Nếu phím <Tab> luôn tạo ra bốn khoảng trắng khi chỉnh sửa tệp Python,
+## bất kể cài đặt của 'tabsize' và 'tabstospaces':
+ extendsyntax python tabgives "    "
+
+## Nếu phím <Tab> luôn tạo ra một TAB thực sự khi chỉnh sửa tệp Makefile:
+ extendsyntax makefile tabgives "	"
+
+
+## === Liên kết phím ===
+## Để biết tất cả chi tiết, hãy xem 'man nanorc', phần LIÊN KẾT PHÍM.
+
+## Nếu bạn muốn tạm dừng nano bằng một phím tắt (thay vì với ^T^Z):
+# bind ^Z suspend main
+
+## Phím tắt <Ctrl+Delete> sẽ xóa từ bên phải con trỏ.
+## Trên một số thiết bị đầu cuối, phím <Ctrl+Backspace> tạo ra ^H, là ký tự ASCII cho phím backspace, vì vậy nó
+## mặc định được liên kết với chức năng backspace. Phím <Backspace> tự nó tạo ra mã phím khác, được liên kết
+## cứng với chức năng backspace. Vì vậy, nếu bạn thường sử dụng phím <Backspace> để backspace và không phải ^H,
+## bạn có thể làm cho phím <Ctrl+Backspace> xóa từ bên trái con trỏ với:
+# bind ^H chopwordleft main
+
+## Để có phím tắt ghi nhớ dễ dàng hơn cho chức năng Comment (ghi đè chức năng Cắt từ con trỏ):
+# bind M-K comment main
+
+## Nếu bạn muốn ^L chỉ làm mới màn hình mà không đưa con trỏ về giữa:
+# bind ^L refresh main
+
+## Khi đôi lúc bạn gõ nhầm M-J thay vì M-K, hoặc M-T thay vì M-R:
+# unbind M-J main
+# unbind M-T main
+## (Các chức năng đó vẫn có thể truy cập thông qua ^T^J và ^T^V.)
+
+## Để nhanh chóng viết hoa hoặc viết thường từ dưới hoặc sau con trỏ.
+## (Những chức năng này về cơ bản là chọn từ và truyền qua lệnh sed.)
+#bind Sh-M-U "{nextword}{mark}{prevword}{execute}|sed 's/.*/\U&/'{enter}" main
+#bind Sh-M-L "{nextword}{mark}{prevword}{execute}|sed 's/.*/\L&/'{enter}" main
+
+## Để sao chép vùng được đánh dấu vào clipboard hệ thống:
+# bind Sh-M-T "{execute}|xsel -ib{enter}{undo}" main
+
+## Để loại bỏ các khoảng trắng ở cuối dòng khi lưu tệp:
+bind ^s "{execute}| sed 's/\s\+$//' {enter}{savefile}" main
+
+## Nếu bạn muốn nano có các liên kết phím quen thuộc hơn,
+## như ^O để Mở, ^F để Tìm, ^H để Trợ giúp, và ^Q để Thoát,
+## hãy bỏ dấu chú thích các dòng này:
+#bind ^X cut main
+#bind ^C copy main
+#bind ^V paste all
+#bind ^Q exit all
+#bind ^s savefile main
+#bind ^W writeout main
+#bind ^O insert main
+#set multibuffer
+#bind ^H help all
+#bind ^H exit help
+#bind ^F whereis all
+#bind ^G findnext all
+#bind ^B wherewas all
+#bind ^D findprevious all
+#bind ^R replace main
+#unbind ^U all
+#unbind ^N main
+#unbind ^Y all
+#unbind M-J main
+#unbind M-T main
+#bind ^A mark main
+#bind ^P location main
+#bind ^T gotoline main
+#bind ^T gotodir browser
+#bind ^T cutrestoffile execute
+#bind ^L linter execute
+#bind ^E execute main
+#bind ^K "{mark}{end}{zap}" main
+#bind ^U "{mark}{home}{zap}" main
+#bind ^Z undo main
+#bind ^Y redo main
+
+#include "C:/ProgramData/chocolatey/lib/nano-win/tools/syntax/*.nanorc"
+
+include "/mnt/e/.boybh/custom/custom_nanorc"

@@ -1,0 +1,20 @@
+<<<<<<< HEAD
+﻿{
+  "agentId": 2,
+  "agentName": "ACER",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus5.actions.githubusercontent.com/UyUcKaLBKPDINkIrcy8Qj0bK5kjYOiAB04649VECxJc1KTzMF2/",
+  "gitHubUrl": "https://github.com/boybh/.boybh",
+  "workFolder": "_work"
+=======
+﻿{
+  "agentId": 2,
+  "agentName": "ACER",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus5.actions.githubusercontent.com/UyUcKaLBKPDINkIrcy8Qj0bK5kjYOiAB04649VECxJc1KTzMF2/",
+  "gitHubUrl": "https://github.com/boybh/.boybh",
+  "workFolder": "_work"
+>>>>>>> 4f606c6 (Initial commit)
+}
