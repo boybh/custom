@@ -1,6 +1,6 @@
 # Define the plugin name and version
-declare -r alias_maker_version="1.0.0"
-declare -r alias_maker_name="alias-maker"
+declare -r alias_maker_version="1.1.1"
+declare -r alias_maker_name="tao-alias"
 export ALIAS="/mnt/e/config/cauhinh/aliases.zsh"
 
 # Check if $ALIAS file exists
